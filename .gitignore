@@ -1,0 +1,41 @@
+# Dependency directory
+node_modules/
+
+# Build output
+build/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor config
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.iml
+
+# Temporary and cache files
+*.local
+*.cache
+*.bak
+*.tmp
+
+# Coverage reports
+coverage/
+
+# Service folders
+.vercel/
