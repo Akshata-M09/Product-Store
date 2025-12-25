@@ -10,6 +10,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { useProductStore } from "../store/product";
 
 const CreatePage = () => {
@@ -20,6 +22,7 @@ const CreatePage = () => {
   });
 
   const toast = useToast();
+  const navigate = useNavigate();
 
   const { createProduct } = useProductStore();
   const handleAddProduct = async () => {
@@ -37,7 +40,11 @@ const CreatePage = () => {
         description: message,
         status: "success",
         isClosable: true,
+        duration: 1000,
       });
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
     }
     setNewProduct({ name: "", price: "", image: "" });
   };

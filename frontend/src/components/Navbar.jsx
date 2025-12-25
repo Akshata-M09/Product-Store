@@ -35,11 +35,17 @@ const Navbar = () => {
         <HStack spacing={2} alignItems={"center"}>
           <Link to={"/create"}>
             <Button>
-              <PlusSquareIcon fontSize={20} />
+              <HStack spacing={2}>
+                <PlusSquareIcon fontSize={30} />
+                <Text fontSize="lg">Create Product</Text>
+              </HStack>
             </Button>
           </Link>
-          <Button onClick={toggleColorMode}>
-            {colorMode === "light" ? <IoMoon /> : <LuSun size="20" />}
+          <Button onClick={toggleColorMode} fontSize={25}>
+            <HStack spacing={2}>
+              {colorMode === "light" ? <IoMoon /> : <LuSun size="20" />}
+              <Text fontSize="lg">Theme</Text>
+            </HStack>
           </Button>
         </HStack>
       </Flex>
