@@ -44,7 +44,7 @@ const Navbar = () => {
           <Button onClick={toggleColorMode} fontSize={25}>
             <HStack spacing={2}>
               {colorMode === "light" ? <IoMoon /> : <LuSun size="20" />}
-              <Text fontSize="lg">Theme</Text>
+              <Text fontSize="lg">Themeeeeee</Text>
             </HStack>
           </Button>
         </HStack>
